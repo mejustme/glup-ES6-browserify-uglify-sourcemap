@@ -1,7 +1,7 @@
 /**
  * Created by lianxu-admin on 2015/12/20.
  */
-import {Person} from './module/Person.js';
+var Person = require('./module/Person-es5');
 
 var obj = {
     name: 'cqh',

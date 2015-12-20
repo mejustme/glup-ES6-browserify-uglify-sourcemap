@@ -7,15 +7,15 @@ function Person(obj){
 };
 
 Person.prototype.getName = function(){
-    return preFix(this.name);
+    return preFix(this.name,"name");
 }
 
 Person.prototype.getAge = function(){
-    return preFix(this.age);
+    return preFix(this.age,"age");
 }
 
-function preFix(str){
-    return "output is:" + str;
+function preFix(arg1, arg2){
+    return "es5: " + arg2 + " is " + arg1;
 }
 
 module.exports = Person;

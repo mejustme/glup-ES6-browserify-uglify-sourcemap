@@ -11,8 +11,8 @@ class Person{
     }
 }
 
-var preFix = (arg1,arg2) => {
-     return arg2 + "is" + arg1;
+var preFix = (arg1, arg2) => {
+     return "es6: " + arg2 + " is " + arg1;
 }
 
 export {Person}

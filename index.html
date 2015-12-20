@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <title>test</title>
 </head>
-<script src="build/js/index.js"></script>
+<style>
+    body{
+        font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+    }
+    .container{
+        margin: 100px auto;
+        width: 550px;
+    }
+    ul{
+        margin-left: -40px;
+        font-size: 17px;
+    }
+    li{
+        list-style-type: none;
+    }
+    p{
+        font-size: 15px;
+    }
+</style>
+<script src="build/js/index-es6.min.js"></script>
+<script src="build/js/index-es5.min.js"></script>
 <body>
-<h1>
-    gulp-ES6-browserify-gulify-sourcemap
-</h1>
+<div class="container">
+    <h2>gulp-ES6-broserify-uglify-sourcemap</h2>
+    <ul>
+        <li>1、使用 babel ES6 to ES5 </li>
+        <li> 2、使用 browserify 打包</li>
+        <li>3、使用 sourceMap 恢复uglify 和 browserfiy 打包前的文件，方便调试</li>
+
+    </ul>
+    <p>可以打开控制台调试，注意设置打钩  <strong>Enable JavaScript source maps</strong></p>
+</div>
+
 </body>
 </html>
