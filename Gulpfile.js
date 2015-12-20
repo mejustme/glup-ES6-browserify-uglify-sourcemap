@@ -21,7 +21,7 @@ gulp.task('js', function() {
             if(path.extname !== '.map'){
                 path.extname = ".min.js";
             }
-        }))
+        }))  
         .pipe(gulp.dest('build/js'))
 });
 
